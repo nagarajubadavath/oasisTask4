@@ -1,0 +1,77 @@
+<html>
+    <head>
+    <style>
+        *{
+        margin:0px;
+        padding:0px;
+        }
+    body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .outer-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .inner-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+    table{
+        margin:20px;
+        border-radius:12px;
+        font-size: 32px;
+        text-align: center;
+    }
+</style>
+</head>
+        <body>
+            <div class="outer-box">
+                <h1>Online Examination Registration</h1>
+            </div>
+            <div class="inner-box">
+            <form action="registration.jsp" method="post">
+                <table border="0" width="50%">
+                    <tr>
+                        <td>
+                            <label for="uname">UserName:</label>
+                        </td>
+                        <td>
+                            <input type="text" style="font-size: 30px;" name="uname" placeholder="Write username/mail id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pwd">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" style="font-size: 30px;" name="pwd" placeholder="write your password">
+                        </td>
+                        <td><input type="checkbox" onclick="showPassword()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile:</label></td>
+                        <td><input type="number" style="font-size: 30px;" name="mobile" placeholder="Your Mobile Number" required></td>
+                    </tr>
+                    <tr colspan="2">
+                        <td></td>
+                        <td align="left";><input type="submit" style="font-size: 30px;" value="Register"></td>
+                    </tr>
+            </table>
+            </form>
+        </div>
+        
+        </body>
+</html>

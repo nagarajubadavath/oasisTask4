@@ -1,0 +1,87 @@
+<html>
+    <head>
+    <style>
+        *{
+        margin:0px;
+        padding:0px;
+        }
+    body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .outer-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .inner-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border: 2px solid black;
+        border-radius: 12px;
+    }
+    table{
+        margin:20px;
+        border-radius:12px;
+        font-size: 32px;
+        text-align: left;
+    }
+    .btn{
+        padding:20px;
+    }
+    
+</style>
+</head>
+        <body>
+            <div class="outer-box">
+                <h1>Online Examination portal</h1>
+            </div>
+            <div class="inner-box">
+            <form action="editprofile.html" method="post">
+                <table border="1" width="50%">
+                    <tr>
+                        <td>
+                            <input class="btn" type="submit" value="EditProfile">
+                        </td>
+                    </tr>
+            </table>
+            </form>
+            <form action="editpassword.html" method="post">
+                <table border="1" width="50%">
+                    <tr>
+                        <td>
+                            <input class="btn" type="submit" value="EditPassword">
+                        </td>
+                    </tr>
+            </table>
+            </form>
+            <form action="logout.jsp" method="post">
+                <table border="1" width="50%">
+                    <tr>
+                        <td>
+                            <input class="btn" type="submit" value="logout">
+                        </td>
+                    </tr>
+            </table>
+            </form>
+            <form action="startExam.jsp" method="post">
+                <table border="1" width="50%">
+                    <tr>
+                        <td>
+                            <input class="btn" type="submit" value="StartQuiz">
+                        </td>
+                    </tr>
+            </table>
+            </form>
+        </div>
+        
+        </body>
+</html>

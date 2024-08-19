@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            body {
+                display: flex;
+                flex-direction: column; /* Stack elements vertically */
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            .outer-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .inner-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+                border: 2px solid black;
+                border-radius: 12px;
+            }
+            table{
+                margin:20px;
+                border-radius:12px;
+                font-size: 32px;
+                text-align: center;
+            }
+            input[type="checkbox"]
+            {
+                transform:scale(1.5);
+                margin:5px;
+            }
+        </style>
+                <script lang="javascript">
+                    function showPassword()
+                    {
+                        var p=document.getElementById("pwd");
+                        if(p.type==="password")
+                    {
+                        p.type="text";
+                    }else{
+                        p.type="password";
+                    }
+                    }
+                </script>
+    </head>
+    <body>
+        <div class="outer-box">
+            <h1>Online Examination Login Portal</h1>
+        </div>
+        <div class="inner-box">
+        <form id="form1" action="login.jsp" method="post">
+            <table border="0" width="50%">
+                <tr>
+                    <td>
+                        <label for="uname">UserName:</label>
+                    </td>
+                    <td>
+                        <input type="text" style="font-size: 30px;" name="uname" placeholder="Write username/mail id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" style="font-size: 30px;" name="pwd" id="pwd" placeholder="write your password">
+                    </td>
+                    <td><input type="checkbox" onClick="showPassword()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" style="font-size: 30px;" value="Login"></td>
+                    <td><input type="button" style="font-size: 30px;" value="Register"></td>
+                </tr>
+        </table>
+        </form>
+    </div>
+    </body>
+</html>
